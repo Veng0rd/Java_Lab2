@@ -1,15 +1,15 @@
 public class RemovingWordsVowelEnd implements IRemovingWords {
-    private static RemovingWordsVowelEnd INSTANCE;
+    private static RemovingWordsVowelEnd _instance;
     private int _length;
 
     private RemovingWordsVowelEnd() {
     }
 
     public static RemovingWordsVowelEnd getInstance() {
-        if (INSTANCE == null) {
-            INSTANCE = new RemovingWordsVowelEnd();
+        if (_instance == null) {
+            _instance = new RemovingWordsVowelEnd();
         }
-        return INSTANCE;
+        return _instance;
     }
 
     public void setLength(int length) {
